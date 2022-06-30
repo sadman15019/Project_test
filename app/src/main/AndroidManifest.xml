@@ -10,10 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CardiacMonitor">
         <activity
+
+            android:name=".RecordsActivity"
+            android:exported="false"
+            android:label="Records"
+            android:theme="@style/Theme.CardiacMonitor"
+            />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.CardiacMonitor1"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+=======
             android:name=".HomeActivity"
             android:label="Home"
             android:theme="@style/Theme.CardiacMonitor"
             ></activity>
+
 
         <meta-data
             android:name="preloaded_fonts"
